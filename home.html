@@ -60,6 +60,7 @@ body, html {
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#skills" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-microchip"></i> SKILLS</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
@@ -70,6 +71,7 @@ body, html {
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#skills" class="w3-bar-item w3-button" onclick="toggleFunction()">SKILLS</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
@@ -140,10 +142,11 @@ body, html {
     <span class="w3-xlarge">1+</span><br>
     Working in corpo
   </div>
-</div><br><br>
-     <h3 class="w3-center">My skills:</h3>
+</div>
+    <div class="w3-row w3-center  w3-padding-16" id="skills"><br><br>
+     <h3 class="w3-center">MY SKILLS:</h3>
 
-<div class="w3-row w3-center  w3-padding-16">
+
     <div class="w3-quarter w3-section text-center" style=" margin: 0 auto;">
         <h3 style="margin-left: 44%; text-align: left">C#</h3>
         <div style="height:230px ; background-color:#666666; width: 70px; margin-left:40%" class="w3-xlarge">
@@ -171,35 +174,36 @@ body, html {
     <div class="w3-quarter w3-section text-center" style=" margin: 0 auto;">
                 <h3 style="margin-left: 42%; text-align: left">PHP</h3>
         <div style="height:230px ; background-color:#666666; width: 70px; margin-left:40%" class="w3-xlarge">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70px; height:calc(100% - 30%);background-color:#f4f3f1;">
-            30%
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70px; height:calc(100% - 20%);background-color:#f4f3f1;">
+            20%
             </div>
         </div>
     </div>
 </div>
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">Frameworks</h3>
-  <p class="w3-center"><em>Here are some frameworks that I know.</em></p><br>
+    <div class="w3-content w3-container w3-padding-64" >
+  <h3 class="w3-center">Frameworks...</h3>
+  <p class="w3-center"><em>Here are some frameworks, libraries and technologies that I know. </em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="https://camo.githubusercontent.com/4db7560202bd5a1f716427dd41ce81a98b3d2153/68747470733a2f2f7261776769742e636f6d2f6272696c6c6f75742f617765736f6d652d616e67756c61722d636f6d706f6e656e74732f6d61737465722f616e67756c61722d6c6f676f2e737667" style="width:100%" onclick="onClick(this)" style="max-height: 162px" class="w3-hover-opacity" alt="The mist over the mountains">
+      <img src="https://camo.githubusercontent.com/4db7560202bd5a1f716427dd41ce81a98b3d2153/68747470733a2f2f7261776769742e636f6d2f6272696c6c6f75742f617765736f6d652d616e67756c61722d636f6d706f6e656e74732f6d61737465722f616e67756c61722d6c6f676f2e737667" style="width:100%"  style="max-height: 162px" class="w3-hover-opacity" alt="Angular">
     </div>
 
     <div class="w3-col m3">
-      <img src="http://www.ryadel.com/wp-content/uploads/2015/03/entity-framework-logo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      <img src="http://www.ryadel.com/wp-content/uploads/2015/03/entity-framework-logo.jpg" style="width:100%"  class="w3-hover-opacity" alt="Entity Framework">
     </div>
 
     <div class="w3-col m3">
-      <img src="Hydrangeas.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      <img src="https://camo.githubusercontent.com/02ed3f6695f288aedec24c2a329c667281efef5f/687474703a2f2f707265636973696f6e2d736f6674776172652e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031342f30342f6a5175726572792e676966" style="width:100%" class="w3-hover-opacity" style="max-height: 162px" alt="jQuery">
     </div>
 
     <div class="w3-col m3">
-      <img src="Hydrangeas.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+      <img src="http://lesscss.org/3.x/public/img/less_logo.png" style="width:100%"  class="w3-hover-opacity" alt="Less">
     </div>
   </div>
 
+<!--
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
       <img src="Hydrangeas.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
@@ -216,8 +220,9 @@ body, html {
     <div class="w3-col m3">
       <img src="Hydrangeas.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
     </div>
-  </div>
+  </div>-->
 </div>
+
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
@@ -338,7 +343,7 @@ body, html {
 <script>
 function myMap()
 {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  myCenter=new google.maps.LatLng(53.40715, 23.50228);
   var mapOptions= {
     center:myCenter,
     zoom:12, scrollwheel: false, draggable: false,
